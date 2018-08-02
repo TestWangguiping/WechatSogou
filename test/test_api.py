@@ -62,6 +62,7 @@ class TestAPIReal(unittest.TestCase):
         assert_in('wx.qlogo.cn', gzh_article['gzh']['headimage'])
         assert_greater_equal(len(gzh_article['article']), 1)
         # 防止测试时被封IP
+           # 防止测试时被封IP
         time.sleep(11)
         article_url = gzh_article['article'][0]['content_url']
 
